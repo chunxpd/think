@@ -30,8 +30,8 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@drawable/tab_color_selector"
-            android:background="@drawable/tab_bg_selector"
+            android:textColor="@drawable/color_selector"
+            android:background="@drawable/tab_selector"
             android:text="생각전달" />
 
         <TextView
@@ -40,8 +40,8 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@drawable/tab_color_selector"
-            android:background="@drawable/tab_bg_selector"
+            android:textColor="@drawable/color_selector"
+            android:background="@drawable/tab_selector"
             android:text="생활꿀팁!" />
 
         <TextView
@@ -50,8 +50,8 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@drawable/tab_color_selector"
-            android:background="@drawable/tab_bg_selector"
+            android:textColor="@drawable/color_selector"
+            android:background="@drawable/tab_selector"
             android:text="제보바람" />
     </LinearLayout>
 
