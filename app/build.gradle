@@ -46,5 +46,6 @@ dependencies {
 
     compile 'com.googlecode.android-query:android-query:0.25.9' //AQuery
     compile 'de.hdodenhof:circleimageview:1.2.1' // CircleImageView
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
 
 }
