@@ -17,7 +17,8 @@ import android.widget.RelativeLayout;
 public class Fragment2 extends Fragment {
     private WebView mWebView;
     private String mCurrentUrl;
-    private final static String MAIN_URL = "http://chunxpd1.cafe24.com/think/bbs/board.php?bo_table=2001&pim=1/";
+   // private final static String MAIN_URL = "http://chunxpd1.cafe24.com/think/bbs/board.php?bo_table=2001&pim=1/";
+   private final static String MAIN_URL = "http://1minthink.co.kr/think/bbs/board.php?bo_table=2001&pim=1/";
     WebView webView;
     public Fragment2()
     {
