@@ -3,8 +3,9 @@
 buildscript {
     
     repositories {
-        google()
         jcenter()
+        mavenCentral()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
@@ -16,10 +17,12 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+
         jcenter()
         mavenCentral()
         maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+
+        google()
     }
 }
 
