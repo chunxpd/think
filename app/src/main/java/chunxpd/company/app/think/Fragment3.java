@@ -13,12 +13,16 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 public class Fragment3 extends Fragment {
     private WebView mWebView;
     private String mCurrentUrl;
     //private final static String MAIN_URL = "http://chunxpd1.cafe24.com/think/bbs/board.php?bo_table=3001&pim=1/";
     private final static String MAIN_URL = "http://1minthink.co.kr/think/bbs/board.php?bo_table=3001&pim=1/";
+    private final long FINISH_INTERVAL_TIME = 2000;
+    private long   backPressedTime = 0;
+
     WebView webView;
     public Fragment3()
     {
@@ -63,6 +67,9 @@ public class Fragment3 extends Fragment {
             return true;
         }
     }
+
+
+
 }
 
 
