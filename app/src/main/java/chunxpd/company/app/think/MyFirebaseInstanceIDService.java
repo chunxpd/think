@@ -41,7 +41,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
         //request
         Request request = new Request.Builder()
-                .url("http://chunxpd1.cafe24.com/think/register.php")
+                .url("http://1minthink.co.kr/think/register.php")    // .url("http://chunxpd1.cafe24.com/think/register.php")
                 .post(body)
                 .build();
 

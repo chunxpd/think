@@ -59,7 +59,7 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
                 //이미지를 보내는 스타일 사용하기
                 .setStyle(new NotificationCompat.BigPictureStyle()
                 .bigPicture(bigPicture)
-                .setBigContentTitle("FCM Push Big Text Title")
+                .setBigContentTitle("생각전달")
                 .setSummaryText(messageBody))
 
                 .setContentIntent(pendingIntent);
