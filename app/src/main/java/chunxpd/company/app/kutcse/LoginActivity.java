@@ -1,13 +1,10 @@
-package chunxpd.company.app.think;
+package chunxpd.company.app.kutcse;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Process;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -24,6 +21,8 @@ import com.kakao.usermgmt.callback.MeResponseCallback;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 import com.kakao.util.helper.log.Logger;
+
+import chunxpd.company.app.kutcse.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -113,7 +112,7 @@ public class LoginActivity extends AppCompatActivity {
                 String kakaoID = String.valueOf(result.getId()); // userProfile에서 ID값을 가져옴
                 String kakaoNickname = result.getNickname();     // Nickname 값을 가져옴
                 Logger.d("UserProfile : " + result);
-
+                Toast.makeText(LoginActivity.this, "로그인 완료", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();

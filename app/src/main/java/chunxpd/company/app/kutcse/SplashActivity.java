@@ -1,4 +1,4 @@
-package chunxpd.company.app.think;
+package chunxpd.company.app.kutcse;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,13 +6,11 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Base64;
 import android.util.Log;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.Signature;
 
 
 public class SplashActivity extends Activity {
@@ -29,8 +27,11 @@ public class SplashActivity extends Activity {
         }catch (InterruptedException e){
             e.printStackTrace();
         }
-        startActivity(new Intent(this, LoginActivity.class));
- //       getKeyHash(this);
+        startActivity(new Intent(this, MainActivity.class).setAction(Intent.ACTION_MAIN)
+                .addCategory(Intent.CATEGORY_LAUNCHER)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+
+       // getKeyHash(this);
         finish();
 
     }

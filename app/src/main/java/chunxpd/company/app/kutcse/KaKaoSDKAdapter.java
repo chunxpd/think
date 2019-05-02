@@ -1,6 +1,5 @@
-package chunxpd.company.app.think;
+package chunxpd.company.app.kutcse;
 
-import android.app.Activity;
 import android.content.Context;
 
 import com.kakao.auth.ApprovalType;

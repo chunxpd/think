@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="chunxpd.company.app.think">
+    package="chunxpd.company.app.kutcse">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
-        android:name=".GlobalApplication"
+        android:name="chunxpd.company.app.kutcse.GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/kutcseicon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+        android:name="com.google.firebase.messaging.default_notification_channel_id"
+        android:value="@string/default_notification_channel_id"/>
+
+
+
 
         <activity
-            android:name=".SplashActivity"
+            android:name="chunxpd.company.app.kutcse.SplashActivity"
             android:theme="@style/SplashTheme"
             android:screenOrientation="portrait">
 
@@ -30,24 +46,34 @@
             </intent-filter>
         </activity>
             <activity
-                android:name=".MainActivity"
+                android:name="chunxpd.company.app.kutcse.MainActivity"
                 android:label="@string/app_name"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:theme="@style/AppTheme.NoActionBar"
+                android:launchMode="singleInstance"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                >
 
             </activity>
         <activity
-            android:name=".LoginActivity"></activity>
+            android:name="chunxpd.company.app.kutcse.LoginActivity"></activity>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
 
         <!--아래 두개의 서비스 태그를 추가한다.-->
         <service
-            android:name=".MyFirebaseMessagingService">
+            android:name="chunxpd.company.app.kutcse.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
         <service
-            android:name=".MyFirebaseInstanceIDService">
+            android:name="chunxpd.company.app.kutcse.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>

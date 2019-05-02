@@ -1,4 +1,4 @@
-package chunxpd.company.app.think;
+package chunxpd.company.app.kutcse;
 
 /**
  * Created by 맞춤팀 on 2018-03-22.
@@ -14,11 +14,15 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
 
+import chunxpd.company.app.kutcse.R;
+
 public class Fragment2 extends Fragment {
     private WebView mWebView;
     private String mCurrentUrl;
    // private final static String MAIN_URL = "http://chunxpd1.cafe24.com/think/bbs/board.php?bo_table=2001&pim=1/";
-   private final static String MAIN_URL = "http://1minthink.co.kr/think/bbs/board.php?bo_table=2001&pim=1/";
+   /*private final static String MAIN_URL = "http://1minthink.co.kr/think/bbs/board.php?bo_table=2001&pim=1/";*/
+   /* private final static String MAIN_URL = "https://chunxpd1.cafe24.com/think/bbs/board.php?bo_table=2001&pim=1/";*/
+   private final static String MAIN_URL = "https://chunxpd1.cafe24.com/kutcse/bbs/board.php?bo_table=6001&pim=1/";
     WebView webView;
     public Fragment2()
     {

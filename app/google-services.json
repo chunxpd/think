@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "1674349508",
-    "firebase_url": "https://thinks-8fe85.firebaseio.com",
-    "project_id": "thinks-8fe85",
-    "storage_bucket": "thinks-8fe85.appspot.com"
+    "project_number": "766432846224",
+    "firebase_url": "https://kutcse-58a27.firebaseio.com",
+    "project_id": "kutcse-58a27",
+    "storage_bucket": "kutcse-58a27.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1674349508:android:7a3c2064e8e09d27",
+        "mobilesdk_app_id": "1:766432846224:android:13d1218a11c63e91",
         "android_client_info": {
-          "package_name": "chunxpd.company.app.think"
+          "package_name": "chunxpd.company.app.kutcse"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1674349508-ipb8grfg5sp5nvtfh45u4f6hcgikoi7a.apps.googleusercontent.com",
+          "client_id": "766432846224-p2p09hc39rk04lbvfgohi0fllabveldi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMCDZ5EFxVxROeh8wLof8RixJOgETwnNQ"
+          "current_key": "AIzaSyAUwY5NJ7SHCLaynXaCuqzD3mTUB8Qnl-w"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766432846224-p2p09hc39rk04lbvfgohi0fllabveldi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
